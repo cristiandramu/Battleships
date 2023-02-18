@@ -1,4 +1,3 @@
-
 # ‘*’ indicates the ships hit
 # ‘-‘ indicates the hits missed
 from random import randint
@@ -54,7 +53,7 @@ create_ships(Hidden_Pattern)
 
 turns = 10
 while turns > 0:
-    print('Welcome!')
+    print('Welcome to the battlefield soldier!')
     print_board(Guess_Pattern)
     row, column = get_ship_location()
     if Guess_Pattern[row][column] == '-':
@@ -70,6 +69,6 @@ while turns > 0:
     if count_hit_ships(Guess_Pattern) == 5:
         print("You have sunk all the battleships ")
         break
-    print(' You have ' +str(turns) + ' turns remaining ')
+    print(' You have ' + str(turns) + ' torpedos remaining ')
     if turns == 0:
         print('Game Over')
